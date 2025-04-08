@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Robo Advisor</title>
+</head>
+<body>
+    <h1>Optimal Portfolio Allocations</h1>
+    <ul>
+        {% for symbol, allocation in allocations.items() %}
+            <li>{{ symbol }}: {{ (allocation * 100) | round(2) }}%</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

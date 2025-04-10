@@ -1,7 +1,7 @@
 import ccxt
 import pandas as pd
 
-def get_binance_data(symbol='BTC/USDT', timeframe='1d', since=None, limit=365):
+def get_binance_data(symbol='BTC/USDT', timeframe='1d', since=None, limit=1000):
     """
     Fetch OHLCV data from Binance for a given trading pair.
     
